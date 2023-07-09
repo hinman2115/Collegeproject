@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dtaildjpg"
+    android:orientation="vertical"
+
+    tools:context=".StudentDetails">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/blue"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:text="Student's Details Form...!"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/getName"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custome_edittext"
+        android:ems="15"
+        android:fontFamily="@font/blue"
+        android:hint="   Full Name"
+        android:textColor="@color/blue"
+        android:textColorHint="#D81B60"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/getClass"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:ems="15"
+        android:fontFamily="@font/blue"
+        android:hint=" Class"
+        android:background="@drawable/custome_edittext"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/getrollnumber"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:ems="15"
+        android:background="@drawable/custome_edittext"
+        android:fontFamily="@font/blue"
+        android:hint=" Roll Number"
+        android:textColor="@color/blue"
+        android:textColorHint="#D81B60"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/getContact"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custome_edittext"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="10dp"
+        android:ems="15"
+        android:fontFamily="@font/blue"
+        android:hint="Contact"
+        android:textColor="@color/black"
+        android:textColorHint="#D81B60"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/blue"
+        android:background="@drawable/custome_edittext"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:text="Submit Details" />
+
+    <ProgressBar
+        android:id="@+id/progress_circularr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/blue"
+        android:indeterminateTint="@color/white"
+        android:visibility="invisible" />
+</LinearLayout>
