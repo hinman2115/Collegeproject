@@ -37,9 +37,9 @@ class MainActivity : AppCompatActivity() {
             var email = emailId.text.toString()
             var pass = password.text.toString()
             if (email.isBlank()) {
-                emailId.setError("Enter Your Email")
+                emailId.error = "Enter Your Email"
             } else if (pass.isBlank()) {
-                password.setError("Enter Your Password")
+                password.error = "Enter Your Password"
                 if (pass.length < 6){
                     Toast.makeText(this, "password must be greater than 6 digits", Toast.LENGTH_SHORT).show()
                 }
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             OnCompleteListener {
                 if (it.isSuccessful) {
                     Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this, HomePage::class.java))
+                    startActivity(Intent(this, StudentDetails::class.java))
 //                    progressBar.isGone
                     finish()
                 } else {

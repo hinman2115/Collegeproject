@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -39,11 +40,11 @@ class Registration_form : AppCompatActivity() {
             var pass = password.text.toString()
 
             if (email.isBlank()) {
-                username.setError("Email required")
+                username.error = "Email required"
             } else if (rollno.isBlank()) {
-                roll_no.setError("RollNo. required")
+                roll_no.error = "RollNo. required"
             } else if (pass.isBlank()) {
-                password.setError("Password required")
+                password.error = "Password required"
                 if (pass.length < 6){
                     Toast.makeText(this, "password must be greater than 6 digits", Toast.LENGTH_SHORT).show()
                 }
@@ -56,7 +57,7 @@ class Registration_form : AppCompatActivity() {
         firebaseAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, HomePage::class.java)
+                val intent = Intent(this, StudentDetails::class.java)
                 startActivity(intent)
                 finish()
             } else {
