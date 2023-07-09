@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "508345247568",
+    "project_id": "meam-sharing-app",
+    "storage_bucket": "meam-sharing-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508345247568:android:c6bbd0a0371ec070b4ee55",
+        "android_client_info": {
+          "package_name": "com.example.collegeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508345247568-2rfbe1cnpjlhaih0dl67f2jk7b003gha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQC3k0oR3HoVSarepLvN9eOX-VV1-qyVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508345247568-2rfbe1cnpjlhaih0dl67f2jk7b003gha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508345247568:android:58085159044060e0b4ee55",
+        "android_client_info": {
+          "package_name": "com.example.meamsharingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508345247568-2rfbe1cnpjlhaih0dl67f2jk7b003gha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQC3k0oR3HoVSarepLvN9eOX-VV1-qyVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508345247568-2rfbe1cnpjlhaih0dl67f2jk7b003gha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
