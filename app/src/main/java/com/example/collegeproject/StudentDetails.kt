@@ -42,7 +42,6 @@ class StudentDetails : AppCompatActivity() {
                 startActivity(intent)
                 ProgressBar.isInvisible
             }, 3000)
-
         }
     }
 }
