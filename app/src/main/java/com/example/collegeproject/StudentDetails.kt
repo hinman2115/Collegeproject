@@ -12,8 +12,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
+import com.example.collegeproject.databinding.ActivityRegistrationFormBinding
 
 class StudentDetails : AppCompatActivity() {
+    private lateinit var  binding: ActivityRegistrationFormBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_student_details)

@@ -1,15 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage">
+    android:orientation="vertical"
+    tools:context=".HomePage"
+    android:background="@color/black">
 
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="176dp"
+        android:layout_margin="30dp"
+        app:cardBackgroundColor="@color/purpal"
+        app:cardCornerRadius="30dp"
+
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/custome_edittext"
+            android:src="@drawable/catimg" />
+
+
+        <LinearLayout
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="214dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Name:"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtrollno"
+                android:layout_width="214dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Roll No:"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtclass"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Class:"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="349dp"
+        android:layout_margin="30dp"
+        app:cardBackgroundColor="@color/purpal"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:outlineAmbientShadowColor="@color/white"
+        >
+
+        <ImageButton
+            android:layout_width="79dp"
+            android:layout_height="81dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custome_edittext"
+            android:src="@drawable/baseline_content_paste_24"/>
+
+        <ImageButton
+            android:id="@+id/btnfees"
+            android:layout_width="79dp"
+            android:layout_height="81dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/newtypecard"
+            android:src="@drawable/baseline_currency_rupee_24" />
+
+        <ImageButton
+            android:layout_width="79dp"
+            android:layout_height="81dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custome_edittext"
+            android:src="@drawable/baseline_content_paste_24" />
+        <ImageButton
+            android:layout_width="79dp"
+            android:layout_height="81dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/newtypecard"
+            android:src="@drawable/baseline_person_24" />
+
+
+    </androidx.cardview.widget.CardView>
     <Button
         android:id="@+id/btnLogout"
-        android:layout_width="match_parent"
+        android:layout_marginLeft="155dp"
+        android:text="Logout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="LogOut" />
+        />
+
+
 
 </LinearLayout>
