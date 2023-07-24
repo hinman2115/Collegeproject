@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dtaildjpg"
+    android:background="@drawable/mixcolorcard"
     android:orientation="vertical"
 
     tools:context=".StudentDetails">
@@ -12,24 +12,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/blue"
-        android:textColor="@color/white"
-        android:textSize="50sp"
         android:text="Student's Details Form...!"
         android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50sp"
         android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/userimage"
+        android:layout_width="103dp"
+        android:layout_height="101dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/newtypecard"
+        android:fontFamily="@font/blue"
+        android:src="@drawable/baseline_person_24"
+        android:text="Submit Details"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 
     <EditText
         android:id="@+id/getName"
         android:layout_width="336dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/custome_edittext"
         android:ems="15"
         android:fontFamily="@font/blue"
         android:hint="   Full Name"
+        android:minHeight="48dp"
         android:textColor="@color/blue"
         android:textColorHint="#D81B60"
         android:textSize="30sp"
@@ -40,26 +56,28 @@
         android:layout_width="336dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custome_edittext"
         android:ems="15"
         android:fontFamily="@font/blue"
-        android:hint=" Class"
-        android:background="@drawable/custome_edittext"
+        android:hint="   Class"
+        android:minHeight="48dp"
         android:textColor="@color/blue"
-        android:textColorHint="@color/black"
+        android:textColorHint="#D81B60"
         android:textSize="30sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/getrollnumber"
-        android:layout_width="333dp"
+        android:layout_width="336dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:ems="15"
+        android:layout_marginTop="40dp"
         android:background="@drawable/custome_edittext"
+        android:ems="15"
         android:fontFamily="@font/blue"
         android:hint=" Roll Number"
+        android:minHeight="48dp"
         android:textColor="@color/blue"
         android:textColorHint="#D81B60"
         android:textSize="25dp"
@@ -67,32 +85,33 @@
 
     <EditText
         android:id="@+id/getContact"
-        android:layout_width="313dp"
+        android:layout_width="336dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/custome_edittext"
-        android:drawableLeft="@drawable/phone"
         android:drawablePadding="10dp"
         android:ems="15"
         android:fontFamily="@font/blue"
-        android:hint="Contact"
+        android:hint="   Contact"
+        android:minHeight="48dp"
         android:textColor="@color/black"
         android:textColorHint="#D81B60"
         android:textSize="25dp"
         android:textStyle="bold" />
 
+
     <Button
         android:id="@+id/submitbtn"
-        android:layout_width="330dp"
+        android:layout_width="216dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/newtypecard"
         android:fontFamily="@font/blue"
-        android:background="@drawable/custome_edittext"
+        android:text="Submit Details"
         android:textColor="@color/white"
-        android:textSize="25dp"
-        android:text="Submit Details" />
+        android:textSize="25dp" />
 
     <ProgressBar
         android:id="@+id/progress_circularr"

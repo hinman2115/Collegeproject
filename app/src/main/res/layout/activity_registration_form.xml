@@ -82,8 +82,11 @@
                 android:layout_height="60dp"
                 android:id="@+id/btnRegister"
                 android:text="sign up"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:padding="10dp"
                 android:layout_marginTop="30dp"
-                android:backgroundTint="@color/purpal"
+                android:background="@drawable/newtypecard"
                 app:cornerRadius = "20dp"/>
 
         </LinearLayout>

@@ -31,17 +31,18 @@ class MainActivity : AppCompatActivity() {
         val signinbtn: TextView = findViewById(R.id.singuptext)
         val emailId: EditText = findViewById(R.id.logEmail)
         val password: EditText = findViewById(R.id.logPassword)
-        val Logout: Button = findViewById(R.id.btnLogout)
+
         firebaseAuth = FirebaseAuth.getInstance()
 
         signinbtn.setOnClickListener {
+            //sing in button intrent
             startActivity(Intent(this, Registration_form::class.java))
             finish()
         }
         forget.setOnClickListener {
             val builder= AlertDialog.Builder(this)
-            builder.setTitle("forget pasword")
-            val view = LayoutInflater.inflate(R.layout.fogott_password)
+            val title = builder.setTitle("forget pasword")
+
         }
         loginbtn.setOnClickListener {
             var email = emailId.text.toString()
@@ -64,7 +65,8 @@ class MainActivity : AppCompatActivity() {
             OnCompleteListener {
                 if (it.isSuccessful) {
                     Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this, StudentDetails::class.java))
+                    //loggin Button intent
+                    startActivity(Intent(this, HomePage::class.java))
 //                    progressBar.isGone
                     finish()
                 } else {
